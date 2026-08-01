@@ -105,7 +105,9 @@ function Navbar() {
       </NavLink>
 
 
-      <p className='flex md:hidden text-sm text-slate-500'>Registo cívil de Angola</p>
+      <p className='flex md:hidden text-sm text-slate-500'>
+        Registo cívil de Angola
+        </p>
       {/* <button
         type="button"
         onClick={() => setMenuToggle(!menuToggle)}
