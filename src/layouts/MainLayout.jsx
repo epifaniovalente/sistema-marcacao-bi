@@ -12,9 +12,10 @@ export const MainLayout = () => {
       <main className="mt-12 relative">
         {/* Serve com espeça reservado - de acordo a rota */}
         <Outlet />
+        <Sidebar/>
       </main>
 
-      <footer className="w-full bg-white border-t border-gray-100">
+      <footer className="w-full pb-14 bg-white border-t border-gray-100">
         <section class="grid grid-cols-3 gap-4 py-6 px-4 text-gray-500">
           <article>
             <h4 className="font-bold text-slate-700">GestBI-Angola</h4>

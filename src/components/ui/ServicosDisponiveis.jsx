@@ -52,7 +52,7 @@ function ServicosDisponiveis() {
                 <p className="text-center text-[11px] font-semibold tracking-widest uppercase text-red-700 mb-3">
                     Serviços disponíveis
                 </p>
-                <h2 className="text-center text-3xl md:text-4xl font-bold text-gray-900 leading-tight mb-3">
+                <h2 className="text-center text-2xl md:text-4xl font-bold text-gray-900 leading-tight mb-3">
                     O que podemos fazer por
                     <span className="text-red-600"> si</span>
                 </h2>

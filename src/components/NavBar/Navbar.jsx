@@ -105,17 +105,15 @@ function Navbar() {
       </NavLink>
 
 
-      <button
+      <p className='flex md:hidden text-sm text-slate-500'>Registo cívil de Angola</p>
+      {/* <button
         type="button"
         onClick={() => setMenuToggle(!menuToggle)}
         className="flex md:hidden cursor-pointer text-amber-600"
       >
         <Menu className='font-bold' />
-      </button>
-      {menuToggle && (
-        <Sidebar onClose={() => setMenuToggle(false)} />
-      )
-      }
+      </button> */}
+
     </div>
   );
 }

@@ -3,6 +3,7 @@ import Button from '../components/Button/Button';
 import { Link } from 'react-router-dom';
 import Funcionamento from '../components/ui/Funcionamento';
 import ServicosDisponiveis from '../components/ui/ServicosDisponiveis';
+import Titulo from '../components/Titulo/Titulo';
 
 
 
@@ -16,11 +17,11 @@ export const Home = () => {
           <p className="text-xs text-red-500 text-center">
             Serviço oficial de registros - República de Angola
           </p>
-          <h1 className="text-slate-900 font-black text-4xl uppercase">
+          <Titulo>
             Renove o seu <br />
             <span className="text-yellow-700"> Bilhete de Identidade</span>
             <br /> <span className="underline underline-offset-2">sem filas</span>
-          </h1>
+          </Titulo>
 
           <p className="max-w-3xl text-gray-500">
             Agende o seu atendimento para renovação, primeira via ou segunda via
