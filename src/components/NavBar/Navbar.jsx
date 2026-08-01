@@ -1,6 +1,7 @@
 import { Link, NavLink } from 'react-router-dom';
-import { Menu } from 'lucide-react';
+import { Building, Headset, HomeIcon, InfoIcon, Menu, NotebookPen } from 'lucide-react';
 import { useState } from 'react';
+import Sidebar from '../Sidebar/Sidebar';
 
 // import { Landmark, Menu } from 'lucide-react';
 
@@ -87,15 +88,15 @@ import { useState } from 'react';
 function Navbar() {
   const [menuToggle, setMenuToggle] = useState(false);
   const dataLink = [
-    { href: '/', label: 'Home' },
-    { href: '/informacao', label: 'Informação' },
-    { href: '/agendamento', label: 'Agendamento' },
-    { href: '/sobre', label: 'Sobre' },
-    { href: '/contacto', label: 'Contacto' },
+    { href: '/', icone: <HomeIcon />, label: 'Home' },
+    { href: '/informacao', icone: <InfoIcon />, label: 'Informação' },
+    { href: '/agendamento', icone: <NotebookPen />, label: 'Agendamento' },
+    { href: '/sobre', icone: <Building />, label: 'Sobre' },
+    { href: '/contacto', icone: <Headset />, label: 'Contacto' },
   ];
 
   return (
-    <div className="flex items-center">
+    <div className="flex items-center relative">
       {/* <Header/> */}
       <NavLink className="hidden md:flex items-center justify-center gap-4 text-sm text-gray-700 ">
         {dataLink.map((link) => (
@@ -103,13 +104,18 @@ function Navbar() {
         ))}
       </NavLink>
 
+
       <button
         type="button"
         onClick={() => setMenuToggle(!menuToggle)}
-        className="flex md:hidden cursor-pointer text-gray-600"
+        className="flex md:hidden cursor-pointer text-amber-600"
       >
-        <Menu />
+        <Menu className='font-bold' />
       </button>
+      {menuToggle && (
+        <Sidebar onClose={() => setMenuToggle(false)} />
+      )
+      }
     </div>
   );
 }

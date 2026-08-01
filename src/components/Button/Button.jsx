@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
   const variants = {
     primary:
-      "bg-linear-to-r from-blue-600 via-blue-700 to-blue-500 hover:bg-blue-700 text-white",
+      "bg-amber-500 hover:bg-amber-600 text-white",
 
     secondary:
       "bg-slate-200 hover:bg-slate-300 text-slate-800",
