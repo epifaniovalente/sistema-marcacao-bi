@@ -1,5 +1,4 @@
 import { Link, NavLink } from 'react-router-dom';
-import Button from '../Button/Button';
 import { Menu } from 'lucide-react';
 import { useState } from 'react';
 
@@ -86,7 +85,7 @@ import { useState } from 'react';
 // }
 
 function Navbar() {
-  const [menuToggle, setMenuToggle]=useState(false)
+  const [menuToggle, setMenuToggle] = useState(false);
   const dataLink = [
     { href: '/', label: 'Home' },
     { href: '/informacao', label: 'Informação' },
@@ -104,9 +103,13 @@ function Navbar() {
         ))}
       </NavLink>
 
-<span className="flex md:hidden">
-      <Button type="button" onClick={()=>setMenuToggle(!menuToggle)} text={<Menu/>} variant="secondary"/>
-</span>
+      <button
+        type="button"
+        onClick={() => setMenuToggle(!menuToggle)}
+        className="flex md:hidden cursor-pointer text-gray-600"
+      >
+        <Menu />
+      </button>
     </div>
   );
 }

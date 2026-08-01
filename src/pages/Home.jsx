@@ -1,26 +1,24 @@
-import {
-  BadgeQuestionMark,
-  IdCard,
-  IdCardIcon,
-} from 'lucide-react';
+import { BadgeQuestionMark, IdCard, IdCardIcon } from 'lucide-react';
 import Button from '../components/Button/Button';
 import { Link } from 'react-router-dom';
 
 export const Home = () => {
+
   return (
     <main className="">
       {/* Hero Section */}
-      <section>
-        <article>
-          <p>Serviço oficial de registros - República de Angola</p>
-          <h1 className="text-green-500 font-bold text-2xl">
-            <h1 className="hero-titulo">
-              Renove o seu
-              <span className="bilhete"> Bilhete de Identidade</span>sem filas
-            </h1>
+      <section className="w-full bg-[#f8fafc] mx-auto px-3 py-6 md:px-6">
+        <article className="max-w-5xl mx-auto flex flex-col gap-4">
+          <p className="text-xs text-red-500 text-center">
+            Serviço oficial de registros - República de Angola
+            </p>
+          <h1 className="text-slate-900 font-bold text-2xl">
+              Renove o seu 
+              <span className="text-yellow-500"> Bilhete de Identidade</span>
+              <br /> sem filas
           </h1>
 
-          <p className="max-w-3xl text-gray-400">
+          <p className="max-w-3xl text-gray-500">
             Agende o seu atendimento para renovação, primeira via ou segunda via
             do BI em Luanda. Rápido, simples e seguro.
           </p>
@@ -29,7 +27,7 @@ export const Home = () => {
 
       {/* ========== SECTION SERVIÇOS ============ */}
       <section className="" id="services">
-        <section className="bg-indigo-50 px-6 py-4 md:py-8">
+        <section className=" px-6 py-4 md:py-8">
           <div className="max-w-4xl mx-auto">
             {/* Header  */}
             <p className="text-center text-[11px] font-semibold tracking-widest uppercase text-red-700 mb-3">
@@ -59,8 +57,8 @@ export const Home = () => {
 
                 <ul className="space-y-2 mb-7">
                   <li class="flex items-center gap-2 text-[13.5px] text-gray-600">
-                    <IdCard className="w-4 h-4 text-amber-600 shrink-0" />{' '}
-                    BI expirado ou a expirar
+                    <IdCard className="w-4 h-4 text-amber-600 shrink-0" /> BI
+                    expirado ou a expirar
                   </li>
                   <li class="flex items-center gap-2 text-[13.5px] text-gray-600">
                     <IdCard className="w-4 h-4 text-amber-600 shrink-0" />{' '}
@@ -215,13 +213,14 @@ export const Home = () => {
             <span className="text-red-600">atendimento?</span>
           </h2>
           <p className="text-gray-500 max-w-3xl text-center text-sm m-auto">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, nihil. Lorem ipsum dolor sit amet consectetur.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores,
+            nihil. Lorem ipsum dolor sit amet consectetur.
           </p>
 
           <div className="beneficios-grid">
             <div className="beneficio">
               <div className="w-12 h-12 rounded-[14px] bg-linear-to-b from-red-500 from-20% via-yellow-600 to-slate-900 flex items-center justify-center mb-5 shadow-[0_8px_28px_rgba(220,100,10,0.35)] shrink-0 text-white">
-                <BadgeQuestionMark/>
+                <BadgeQuestionMark />
               </div>
               <div>
                 <h4 className="text-yellow-700 font-medium">
@@ -234,24 +233,32 @@ export const Home = () => {
             </div>
 
             <div class="beneficio">
-                    <div className="w-12 h-12 rounded-[14px] bg-linear-to-b from-red-500 from-20% via-yellow-600 to-slate-900 flex items-center justify-center mb-5 shadow-[0_8px_28px_rgba(220,100,10,0.35)] shrink-0 text-white">
-                      <BadgeQuestionMark/>
-                    </div>
-                    <div>
-                        <h4 className="text-yellow-700 font-medium">Lorem, ipsum dolor.</h4>
-                        <p className="text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit..</p>
-                    </div>
-                </div>
+              <div className="w-12 h-12 rounded-[14px] bg-linear-to-b from-red-500 from-20% via-yellow-600 to-slate-900 flex items-center justify-center mb-5 shadow-[0_8px_28px_rgba(220,100,10,0.35)] shrink-0 text-white">
+                <BadgeQuestionMark />
+              </div>
+              <div>
+                <h4 className="text-yellow-700 font-medium">
+                  Lorem, ipsum dolor.
+                </h4>
+                <p className="text-sm">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit..
+                </p>
+              </div>
+            </div>
 
-                <div class="beneficio">
-                    <div className="w-12 h-12 rounded-[14px] bg-linear-to-b from-red-500 from-20% via-yellow-600 to-slate-900 flex items-center justify-center mb-5 shadow-[0_8px_28px_rgba(220,100,10,0.35)] shrink-0 text-white">
-                        <BadgeQuestionMark/>
-                    </div>
-                    <div>
-                        <h4 className="text-yellow-700 font-medium">Lorem, ipsum dolor.</h4>
-                        <p className="text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
+            <div class="beneficio">
+              <div className="w-12 h-12 rounded-[14px] bg-linear-to-b from-red-500 from-20% via-yellow-600 to-slate-900 flex items-center justify-center mb-5 shadow-[0_8px_28px_rgba(220,100,10,0.35)] shrink-0 text-white">
+                <BadgeQuestionMark />
+              </div>
+              <div>
+                <h4 className="text-yellow-700 font-medium">
+                  Lorem, ipsum dolor.
+                </h4>
+                <p className="text-sm">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
           </div>
         </section>
       </section>
